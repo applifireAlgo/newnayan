@@ -1,0 +1,31 @@
+Ext.define('Mobilebp.mobilebp.shared.com.model.defaultcontext.defaultdomain.TestFUploadModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "tfId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "fileName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "uploadFile",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
