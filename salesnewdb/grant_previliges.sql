@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON salesnew.* TO 'salesnew'@'%' IDENTIFIED BY 'salesnew' WITH GRANT OPTION
