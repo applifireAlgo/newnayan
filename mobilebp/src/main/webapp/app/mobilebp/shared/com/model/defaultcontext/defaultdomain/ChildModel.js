@@ -1,0 +1,31 @@
+Ext.define('Mobilebp.mobilebp.shared.com.model.defaultcontext.defaultdomain.ChildModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "cid",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "cName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "cNo",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

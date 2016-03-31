@@ -1,0 +1,139 @@
+Ext.define('Mobilebp.mobilebp.web.com.view.defaultcontext.defaultdomain.NewFUI', {
+     "xtype": "newFUI",
+     "items": [{
+          "xtype": "textfield",
+          "fieldLabel": "Name",
+          "margin": 5,
+          "bindable": "tNm",
+          "name": "tNm",
+          "itemId": "textfield_ext_20658"
+     }, {
+          "xtype": "button",
+          "name": "Button",
+          "text": "Button",
+          "margin": 5,
+          "itemId": "button_ext_20692",
+          "listeners": {
+               "click": "onButtonClick"
+          }
+     }, {
+          "xtype": "grids",
+          "name": "Grid",
+          "title": "Grid",
+          "hiddenName": "Grid",
+          "margin": 5,
+          "collapseMode": "header",
+          "border": true,
+          "editTools": false,
+          "features": [],
+          "plugins": [{
+               "ptype": "cellediting",
+               "clicksToEdit": 1
+          }],
+          "columns": [{
+               "xtype": "gridcolumn",
+               "header": "tAid",
+               "hidden": true,
+               "dataIndex": "tAid",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "tNm",
+               "hidden": true,
+               "dataIndex": "tNm",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "frndNm",
+               "hidden": true,
+               "dataIndex": "frndNm",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "createdBy",
+               "hidden": true,
+               "dataIndex": "createdBy",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "createdDate",
+               "hidden": true,
+               "dataIndex": "createdDate",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "updatedBy",
+               "hidden": true,
+               "dataIndex": "updatedBy",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "updatedDate",
+               "hidden": true,
+               "dataIndex": "updatedDate",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "versionId",
+               "hidden": true,
+               "dataIndex": "versionId",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "activeStatus",
+               "hidden": true,
+               "dataIndex": "activeStatus",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "txnAccessCode",
+               "hidden": true,
+               "dataIndex": "txnAccessCode",
+               "flex": 1
+          }, {
+               "xtype": "gridcolumn",
+               "header": "primaryDisplay",
+               "hidden": true,
+               "dataIndex": "primaryDisplay",
+               "flex": 1
+          }],
+          "itemId": "gridpanel_ext_25162",
+          "store": {
+               "model": "Mobilebp.mobilebp.shared.com.model.defaultcontext.defaultdomain.TestAModel",
+               "autoLoad": true,
+               "autoSync": true,
+               "proxy": {
+                    "type": "ajax",
+                    "url": "secure/TestA/findAll",
+                    "serviceId": "D310899F-6453-49FA-9635-CC4982816F25",
+                    "serviceOperationId": "6A626287-416D-4D4D-8DED-32555BA30186",
+                    "actionMethods": {
+                         "read": "GET"
+                    },
+                    "headers": {
+                         "Content-Type": "application/json"
+                    },
+                    "extraParams": {},
+                    "reader": {
+                         "type": "json",
+                         "rootProperty": "response.data"
+                    }
+               }
+          },
+          "tools": [{
+               "type": "refresh",
+               "tooltip": "Refresh Grid Data",
+               "handler": "onGridRefreshClick"
+          }]
+     }],
+     "border": true,
+     "autoScroll": true,
+     "title": "Form",
+     "margin": 5,
+     "dockedItems": [],
+     "itemId": "form_ext_20648",
+     "extend": "Ext.form.Panel",
+     "requires": ["Mobilebp.mobilebp.shared.com.model.defaultcontext.defaultdomain.TestAModel", "Mobilebp.mobilebp.web.com.controller.defaultcontext.defaultdomain.NewFUIController", "Mobilebp.mobilebp.shared.com.viewmodel.defaultcontext.defaultdomain.NewFUIViewModel", "Mobilebp.mobilebp.shared.com.model.defaultcontext.defaultdomain.NewFUIModel", "Mobilebp.view.fw.component.Grids"],
+     "viewModel": "NewFUIViewModel",
+     "controller": "NewFUIController"
+});
