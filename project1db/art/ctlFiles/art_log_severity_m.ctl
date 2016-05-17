@@ -1,0 +1,2 @@
+load data infile '/tmp/applifire/db/IVWOX6LP3AJPUMW0KDHFRW/0324EF80-6FA3-46E4-8715-4919398BACD2/art/data/art_log_severity_m.csv' "str '#appfirenewline#'" into table art_log_severity_m FIELDS TERMINATED BY '#appfire#' (severityId,logConfigId,severity,label,versionId,createdBy,createdDate TIMESTAMP 'yyyy-mm-dd hh24:mi:ss".0"',updatedBy,updatedDate TIMESTAMP 'yyyy-mm-dd hh24:mi:ss".0"',activeStatus)
+

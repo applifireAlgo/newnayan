@@ -1,0 +1,31 @@
+Ext.define('Project1.project1.shared.com.model.sampleboundedcontext.sampledomain.TestEntModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "testId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "testName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "duration",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

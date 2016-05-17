@@ -1,0 +1,2 @@
+load data infile '/tmp/applifire/db/IVWOX6LP3AJPUMW0KDHFRW/0324EF80-6FA3-46E4-8715-4919398BACD2/art/data/art_external_integration.csv' "str '#appfirenewline#'" into table art_external_integration FIELDS TERMINATED BY '#appfire#' (integration_id,integration_name,integration_config_json char(50000),integration_dsl char(50000),project_id,project_version_id,created_by,created_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss".0"',app_creator_id,updated_by,updated_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss".0"',version_id,active_status,connectorId)
+

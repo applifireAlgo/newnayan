@@ -1,0 +1,2 @@
+load data infile '/tmp/applifire/db/IVWOX6LP3AJPUMW0KDHFRW/0324EF80-6FA3-46E4-8715-4919398BACD2/art/data/art_chart_data_field_json.csv' "str '#appfirenewline#'" into table art_chart_data_field_json FIELDS TERMINATED BY '#appfire#' (data_field_id,data_field_name,data_field_json char(20000),created_by,created_date DATE 'yyyy-mm-dd hh24:mi:ss',updated_by,updated_date DATE 'yyyy-mm-dd hh24:mi:ss',version_id)
+

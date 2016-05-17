@@ -1,0 +1,27 @@
+
+
+
+
+
+ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+ORACLE_SID=XE
+PATH=$PATH:$ORACLE_HOME/bin:$ORACLE_SID
+export ORACLE_HOME
+export ORACLE_SID
+export PATH
+ART_DATA_PATH=/tmp/applifire/db/IVWOX6LP3AJPUMW0KDHFRW/0324EF80-6FA3-46E4-8715-4919398BACD2/art/data
+AST_DATA_PATH=/tmp/applifire/db/IVWOX6LP3AJPUMW0KDHFRW/0324EF80-6FA3-46E4-8715-4919398BACD2/ast/data
+DB_NAME=applifire
+USER=root
+PASSWORD=root
+PORT=3308
+HOST=localhost
+MYSQL=/usr/bin
+PROJECT_ID=IVWOX6LP3AJPUMW0KDHFRW
+PROJECT_VERSION_ID=1
+
+
+
+echo 'copy ART data from applifire starts....'
+echo 'copy ART data from applifire ends....'
+

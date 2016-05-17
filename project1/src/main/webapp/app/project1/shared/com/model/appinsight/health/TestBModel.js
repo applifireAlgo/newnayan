@@ -1,0 +1,35 @@
+Ext.define('Project1.project1.shared.com.model.appinsight.health.TestBModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "tid",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "tno",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "tno1",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "tno3",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

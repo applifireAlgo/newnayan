@@ -1,0 +1,32 @@
+Ext.define('Project1.project1.shared.com.model.testboundedcontext.PersonalINfoModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey1",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "fName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "age",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "dateOfBirth",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "salary",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "isEmp",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "ruSure",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
